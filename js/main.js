@@ -13,7 +13,7 @@ const stop_click = (function() {
                 window.alert('Mais qu\'est ce que tu fais de ta vie...');
                 break;
             case 30:
-                $("sub-title").attr('innerText', 'Annulé !');
+                $("#sub-title").text('Annulé !');
                 $("#img-main").attr('src', '');
                 setTimeout(() => {
                     alert('Super, tu as cassé PeuMad!'); 
