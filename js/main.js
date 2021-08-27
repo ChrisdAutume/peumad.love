@@ -30,7 +30,7 @@ const konami = (function() {
     $(document).keydown(function (e) {
         if (e.keyCode === key[i++]) {
             if (i === key.length) {
-                alert('Konami !!!');
+                window.location.href = "https://peumad.love/jeu.html";
                 i = 0;
                 return false;
             }
