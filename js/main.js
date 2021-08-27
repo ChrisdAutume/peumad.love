@@ -29,7 +29,7 @@ const konami = (function() {
     i = 0;
     $(document).keydown(function (e) {
         if (e.keyCode === key[i++]) {
-            if (n === k.length) {
+            if (i === key.length) {
                 alert('Konami !!!');
                 i = 0;
                 return false;
