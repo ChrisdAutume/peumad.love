@@ -23,6 +23,24 @@ const stop_click = (function() {
     });
 });
 
+const stop_click = (function() {
+    //Haut, haut, bas, bas, gauche, droite, gauche, droite, B, A
+    var key = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+    i = 0;
+    $(document).keydown(function (e) {
+        if (e.keyCode === key[i++]) {
+            if (n === k.length) {
+                alert('Konami !!!');
+                i = 0;
+                return false;
+            }
+        }
+        else {
+            i = 0;
+        }
+    });
+});
+
 $(document).ready(function() {
     stop_click();
 });
