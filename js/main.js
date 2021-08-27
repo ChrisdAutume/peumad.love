@@ -14,7 +14,7 @@ const stop_click = (function() {
                 window.alert('Mais qu\'est ce que tu fais de ta vie...');
                 break;
             case 30:
-                $("#img-main").attr('src', '/img/');
+                $("#img-main").attr('src', '');
                 setTimeout(() => {
                     alert('Super, tu as cassé PeuMad!'); 
                 }, 100);
