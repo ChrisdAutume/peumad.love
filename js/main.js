@@ -1,6 +1,5 @@
 const stop_click = (function() {
     let nblick = 0
-    console.log('add event');
     $("#img-div").on("click", () => {
         nblick++;
         switch (nblick) {
@@ -14,6 +13,7 @@ const stop_click = (function() {
                 window.alert('Mais qu\'est ce que tu fais de ta vie...');
                 break;
             case 30:
+                $("sub-title").attr('innerText', 'Annulé !');
                 $("#img-main").attr('src', '');
                 setTimeout(() => {
                     alert('Super, tu as cassé PeuMad!'); 
